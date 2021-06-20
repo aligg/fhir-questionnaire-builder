@@ -1,16 +1,20 @@
 import Form from "./Form";
 import Output from "./Output";
 import React from "react";
+import { validate } from "../helpers";
 
 const QUESTIONNAIRE_DEFAULT = {
     status: "draft",
-    name: "",
     resourceType: "Questionnaire",
-    items: [],
 };
 
 const BuilderContainer = () => {
     const [data, setData] = React.useState(QUESTIONNAIRE_DEFAULT);
+
+    React.useEffect(() => {
+        validate(data);
+    }, [data]);
+
     return (
         <div className="container">
             <Form />

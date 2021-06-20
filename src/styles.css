@@ -22,10 +22,12 @@ body,
     flex-direction: column;
     background-color: blanchedalmond;
     flex: 1;
+    padding: 5px;
 }
 
 .output {
     flex-direction: column;
     background-color: cornsilk;
     flex: 1;
+    padding: 5px;
 }
