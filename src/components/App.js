@@ -1,13 +1,15 @@
-import '../App.css';
+import "../App.css";
+import BuilderContainer from "./BuilderContainer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+        <header className="app-header">
         <p>FHIR Questionnaire Builder</p>
-      </header>
+        </header>
+        <BuilderContainer />
     </div>
-  );
-}
+  )
+};
 
 export default App;
