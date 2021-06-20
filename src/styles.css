@@ -1,0 +1,31 @@
+html,
+body,
+#root,
+.app {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.form {
+    flex-direction: column;
+    background-color: blanchedalmond;
+    flex: 1;
+}
+
+.output {
+    flex-direction: column;
+    background-color: cornsilk;
+    flex: 1;
+}
