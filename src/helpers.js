@@ -4,10 +4,9 @@ const fhir = new Fhir();
 
 /**
  * Helper to validate received FHIR object
- * @param {obj} FHIR obj
- * @returns
+ * @param {obj} obj FHIR object
+ * @returns {obj} e.g. { valid: true, messages: [] }
  */
 export const validate = (obj) => {
-    var results = fhir.validate(obj, { errorOnUnexpected: true });
-    console.log(results);
+    return fhir.validate(obj, { errorOnUnexpected: true });
 };
