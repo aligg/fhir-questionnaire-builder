@@ -20,14 +20,15 @@ body,
 
 .form {
     flex-direction: column;
-    background-color: blanchedalmond;
     flex: 1;
     padding: 5px;
+    display: flex;
+    background-color: antiquewhite;
 }
 
 .output {
     flex-direction: column;
-    background-color: cornsilk;
+    background-color: beige;
     flex: 1;
     padding: 5px;
 }
